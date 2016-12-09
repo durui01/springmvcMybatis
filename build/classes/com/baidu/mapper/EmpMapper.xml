@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+ <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.baidu.mapper.EmpMapper"><!-- 如果使用接口编程，必须写到接口 -->
+  <select id="queryAll" resultType="com.baidu.pojo.Emp">
+     select id,name,job,address,age from dept;
+  </select>
+</mapper>
+
+
